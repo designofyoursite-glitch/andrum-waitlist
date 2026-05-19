@@ -3,208 +3,336 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andrum — Join the Waitlist</title>
-<meta name="description" content="Andrum is a set of 7 guided breathwork practices — each built for a different hard moment in relationships. Join the waitlist and get early access — free.">
+<title>Andrum SOS Practices</title>
+<meta name="description" content="Andrum SOS Practices are 7 guided breathwork audios for moments when anxious attachment takes over.">
 
-<meta property="og:title" content="Andrum — Join the Waitlist">
-<meta property="og:description" content="Andrum is a set of 7 guided breathwork practices — each built for a different hard moment in relationships. Join the waitlist and get early access — free.">
+<meta property="og:title" content="Andrum SOS Practices">
+<meta property="og:description" content="7 guided breathwork audios for the moments when anxious attachment takes over.">
 <meta property="og:image" content="https://andrum.space/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Andrum — Join the Waitlist">
-<meta name="twitter:description" content="Andrum is a set of 7 guided breathwork practices — each built for a different hard moment in relationships. Join the waitlist and get early access — free.">
+<meta name="twitter:title" content="Andrum SOS Practices">
+<meta name="twitter:description" content="7 guided breathwork audios for the moments when anxious attachment takes over.">
 <meta name="twitter:image" content="https://andrum.space/assets/og-image.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-<!-- BLOBS -->
-<div class="blob-layer">
+<div class="blob-layer" aria-hidden="true">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
 </div>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-<!-- PARTICLES -->
-<canvas id="particles-canvas"></canvas>
-
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-brand" aria-label="Andrum">
     <img src="assets/ANDRUM.svg" alt="Andrum" class="nav-brand-logo">
   </a>
   <div class="nav-links">
-    <a href="https://instagram.com/andrum.space" target="_blank" class="nav-link nav-link--icon" aria-label="Instagram">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-    </a>
-    <a href="#practices" class="nav-link">About the project</a>
-    <a href="#waitlist-cta" class="nav-cta">Join the waitlist</a>
+    <a href="#practices" class="nav-link">Practices</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#purchase" class="nav-cta">Buy Now</a>
   </div>
 </nav>
 
-<!-- ─── HERO / WAITLIST BLOCK ─── -->
-<section class="hero">
-  <div class="sphere-wrap">
-    <div class="sphere-ring sphere-ring-3"></div>
-    <div class="sphere-ring sphere-ring-2"></div>
-    <div class="sphere-ring sphere-ring-1"></div>
-    <div class="sphere"></div>
-  </div>
-
-  <div class="hero-content">
-    <div class="hero-logo-block">
+<main>
+  <section class="hero">
+    <div class="sphere-wrap" aria-hidden="true">
+      <div class="sphere-ring sphere-ring-3"></div>
+      <div class="sphere-ring sphere-ring-2"></div>
+      <div class="sphere-ring sphere-ring-1"></div>
+      <div class="sphere"></div>
+    </div>
+    <div class="hero-content">
       <img src="assets/Andrum_full.svg" alt="Andrum" class="hero-logo">
+      <h1>When the anxiety wave hits, come back to your body first.</h1>
+      <p class="hero-lead">Andrum SOS Practices are 7 guided breathwork audios for the moments when anxious attachment takes over - after a message, a silence, a spiral, or the urge to reach out.</p>
+      <p class="hero-sub">Short, body-based practices to help you settle, find the pause, and choose your next step from ground - not panic.</p>
+      <div class="cta-row">
+        <a href="#purchase" class="button-primary">Buy the SOS Practices</a>
+      </div>
+      <p class="microcopy">7 audio practices · 5-10 minutes each · Instant access</p>
     </div>
-    <p class="hero-sub">Andrum is almost ready. Before we launch, we want to make sure it actually works for the moments that matter most.<br>Join the waitlist and get early access to the first practice — free.</p>
+  </section>
 
-    <div class="waitlist-form-wrap">
-      <div id="waitlist-form">
-        <div class="waitlist-input-row">
-          <input class="waitlist-input" type="email" placeholder="Your email address" id="email-input" />
-          <button class="waitlist-btn" data-form-submit="primary">Join the waitlist &amp; listen free</button>
+  <section class="split-section" id="problem">
+    <div class="split-copy reveal">
+      <div class="section-tag">Problem</div>
+      <h2>You know what is happening. But knowing doesn't stop the body.</h2>
+      <p>A message lands differently. A reply takes too long. A conversation feels colder than before.</p>
+      <p>And suddenly your body is already there: chest tight, stomach dropped, thoughts racing, hand reaching for the phone.</p>
+      <p>You may understand attachment patterns. You may have done the inner work. But in the moment it hits, you need something simpler than insight.</p>
+      <p>You need a way back into your body.</p>
+    </div>
+    <div class="image-placeholder reveal" aria-label="Image placeholder">
+      <span>Image placeholder</span>
+    </div>
+  </section>
+
+  <section class="split-section split-section--reverse">
+    <div class="split-copy reveal">
+      <div class="section-tag">What Andrum Is</div>
+      <h2>What Andrum is</h2>
+      <p>Andrum is a space to breathe.</p>
+      <p>The SOS Practices are a collection of 7 guided audio practices created for acute emotional states connected to anxious attachment.</p>
+      <p>Each practice gives your nervous system a clear path:</p>
+      <div class="method-list">
+        <span>Anchor the body.</span>
+        <span>Allow the wave to move.</span>
+        <span>Align with the next choice.</span>
+      </div>
+    </div>
+    <div class="soft-panel reveal">
+      <p>For the moment you feel activated</p>
+      <p>For the spiral that will not stop</p>
+      <p>For the message you might regret sending</p>
+      <p>For the shame, jealousy, freeze, anger, or urgency that takes over</p>
+    </div>
+  </section>
+
+  <section class="scenarios" id="practices">
+    <div class="section-heading reveal">
+      <div class="section-tag">What You Get</div>
+      <h2>The 7 practices</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-num">Practice 01</div>
+        <div class="card-title">When Anxiety Hits After Messaging or a Conversation</div>
+        <p class="card-body">A message came - or didn't. The pause felt too long. Something in your chest tightened before you even finished reading. This practice brings you back to your body when your nervous system fires before your mind can catch up. Breath by breath.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 02</div>
+        <div class="card-title">When Thoughts Are Racing and Won't Stop</div>
+        <p class="card-body">You're replaying the conversation. Imagining what comes next. Trying to stop the loop - and somehow making it louder. You don't need to figure anything out right now. Just come back to your body. That's all this practice asks.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 03</div>
+        <div class="card-title">When I Feel Small, Wrong, or "Not Enough"</div>
+        <p class="card-body">The inner voice is loud today. It says you got it wrong, you're too much, you don't belong. This practice doesn't silence that voice. It creates space beside it - warm, steady - where you can simply be. Exactly as you are right now.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 04</div>
+        <div class="card-title">When Jealousy Rises and You're Scared of Losing Them</div>
+        <p class="card-body">The body is tense. Breathing is short. There's a knot inside. Jealousy isn't a flaw - it's a signal that you want to be seen. This practice helps it move through you, not take over. The longer exhale tells your body: you are safe right now.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 05</div>
+        <div class="card-title">When You're Desperate to Reach Out - Let's Walk</div>
+        <p class="card-body">Something is burning. The urge to text, to fix it, to know - right now. Don't fight it. Let's walk it out instead. Put your earphones in and move. Breath and steps, together. The message can wait. This moment cannot.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 06</div>
+        <div class="card-title">When I Freeze and Feel Nothing</div>
+        <p class="card-body">Not sadness. Not anxiety. Just... nothing. A heavy absence where feeling used to be. This practice doesn't force anything. It gently warms the body back - layer by layer, breath by breath - the way you'd thaw something slowly from the inside out.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-num">Practice 07</div>
+        <div class="card-title">When Anger Rises and You Want to Tell Everyone Off</div>
+        <p class="card-body">The heat is rising. You want to say something sharp and you know you'll regret it. Anger isn't the enemy - it's the alarm. This practice gives it somewhere to go. Loud, physical, real. The calm comes after. It always does.</p>
+      </div>
+    </div>
+    <p class="closing-note reveal">Each audio is 5-10 minutes and designed for one specific state, so you do not have to decide what you need when you are already overwhelmed.</p>
+  </section>
+
+  <section class="split-section">
+    <div class="split-copy reveal">
+      <div class="section-tag">Why Breathwork</div>
+      <h2>This is not about thinking your way out.</h2>
+      <p>Anxious attachment is not only a thought pattern. It is a body state.</p>
+      <p>Your heart speeds up. Your breath changes. Your chest tightens. Your nervous system reads uncertainty as danger.</p>
+      <p>That is why advice, journaling, or "just calm down" often cannot reach you in the moment.</p>
+      <p>Andrum starts where the reaction starts: in the body.</p>
+    </div>
+    <div class="soft-panel soft-panel--list reveal">
+      <p>Longer exhales help signal safety to the nervous system.</p>
+      <p>Structured breathing gives the mind something steady to follow.</p>
+      <p>Movement helps metabolise urgency and activation.</p>
+      <p>A guided voice holds the rhythm when you cannot hold it alone.</p>
+    </div>
+  </section>
+
+  <section class="method-section">
+    <div class="section-heading reveal">
+      <div class="section-tag">How It Works</div>
+      <h2>Anchor · Allow · Align</h2>
+    </div>
+    <div class="method-grid">
+      <div class="method-card reveal">
+        <span>Anchor</span>
+        <h3>Come back to the body.</h3>
+        <p>The breath gives your nervous system a first signal of safety.</p>
+      </div>
+      <div class="method-card reveal">
+        <span>Allow</span>
+        <h3>Open the space.</h3>
+        <p>The wave is not pushed away. It is given room to move through.</p>
+      </div>
+      <div class="method-card reveal">
+        <span>Align</span>
+        <h3>Choose from ground.</h3>
+        <p>When the emergency signal softens, your next step becomes clearer.</p>
+      </div>
+    </div>
+    <p class="pull-quote reveal">The goal is not to become someone who never gets triggered. The goal is to find the way back faster.</p>
+  </section>
+
+  <section class="split-section split-section--reverse">
+    <div class="split-copy reveal">
+      <div class="section-tag">Who It's For</div>
+      <h2>This is for you if...</h2>
+      <ul class="check-list">
+        <li>You feel calm on the outside, but activated inside close relationships.</li>
+        <li>You replay messages, silences, tones, and tiny shifts.</li>
+        <li>You understand your patterns, but still cannot stop the body reaction.</li>
+        <li>You reach for reassurance and then feel ashamed for needing it.</li>
+        <li>You want a tool for the exact moment, not another concept to think about.</li>
+      </ul>
+      <p class="small-note">Andrum is not a replacement for therapy. It is a practical support tool for the moments between sessions, conversations, and choices.</p>
+    </div>
+    <div class="image-placeholder image-placeholder--tall reveal" aria-label="Image placeholder">
+      <span>Image placeholder</span>
+    </div>
+  </section>
+
+  <section class="trust" id="about">
+    <div class="trust-inner">
+      <div class="section-tag reveal">Who made this</div>
+      <h2 class="reveal">Built by women<br>who have lived this<br><em>from the inside</em></h2>
+      <p class="body-p reveal">Andrum was built by three women who have lived anxious attachment from the inside - not as researchers, but as the person who couldn't stop refreshing, couldn't calm down, couldn't explain to anyone why it felt like the world was ending. The practices exist because we needed them and couldn't find them.</p>
+      <div class="team-section reveal">
+        <div class="team-img-wrap">
+          <img class="team-img" src="assets/images/team.jpg" alt="Ksu, Bec and Masha">
         </div>
-        <label class="form-checkbox">
-          <input type="checkbox" id="consent-1" checked />
-          <span class="form-checkbox-box"></span>
-          <span class="form-checkbox-text">By leaving your email, you agree to our <a href="/privacy" target="_blank">Privacy Policy</a></span>
-        </label>
-      </div>
-    </div>
-
-    <div class="hero-social">
-      <a href="https://instagram.com/andrum.space" target="_blank" class="instagram-link">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-        Follow us on Instagram for updates
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ─── ABOUT PRODUCT ─── -->
-<section class="about-product" id="practices">
-  <div class="section-tag reveal">About the upcoming product</div>
-  <h2 class="reveal">7 practices<br><em>Each built for a different hard moment</em></h2>
-  <p class="body-p reveal">Andrum is a set of 7 guided breathwork practices — each one built for a different hard moment in relationships. Not for general stress. Not for winding down after work. For the specific moments when your body is already gone and your mind can't catch up.</p>
-  <div class="pull-quote reveal">When he doesn't reply and your chest tightens. When the same thought loops for the fourth hour. When you're about to send something you'll regret. When you've gone so numb you can't feel anything at all.</div>
-  <p class="body-p reveal">Each practice is short — 5 to 10 minutes. Each one uses a specific breath pattern matched to a specific state your body gets into. Because panic and freeze aren't the same thing. Jealousy and anger need different signals. One practice isn't enough.</p>
-</section>
-
-<!-- ─── PRACTICE CARDS ─── -->
-<section class="scenarios">
-  <h2 class="reveal">The 7 practices</h2>
-  <div class="cards-grid">
-
-    <div class="card reveal">
-      <div class="card-num">Practice 01</div>
-      <div class="card-title">When Anxiety Hits After Messaging or a Conversation</div>
-      <p class="card-body">A message came — or didn't. The pause felt too long. Something in your chest tightened before you even finished reading. This practice brings you back to your body when your nervous system fires before your mind can catch up. Breath by breath.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 02</div>
-      <div class="card-title">When Thoughts Are Racing and Won't Stop</div>
-      <p class="card-body">You're replaying the conversation. Imagining what comes next. Trying to stop the loop — and somehow making it louder. You don't need to figure anything out right now. Just come back to your body. That's all this practice asks.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 03</div>
-      <div class="card-title">When I Feel Small, Wrong, or "Not Enough"</div>
-      <p class="card-body">The inner voice is loud today. It says you got it wrong, you're too much, you don't belong. This practice doesn't silence that voice. It creates space beside it — warm, steady — where you can simply be. Exactly as you are right now.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 04</div>
-      <div class="card-title">When Jealousy Rises and You're Scared of Losing Them</div>
-      <p class="card-body">The body is tense. Breathing is short. There's a knot inside. Jealousy isn't a flaw — it's a signal that you want to be seen. This practice helps it move through you, not take over. The longer exhale tells your body: you are safe right now.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 05</div>
-      <div class="card-title">When You're Desperate to Reach Out — Let's Walk</div>
-      <p class="card-body">Something is burning. The urge to text, to fix it, to know — right now. Don't fight it. Let's walk it out instead. Put your earphones in and move. Breath and steps, together. The message can wait. This moment cannot.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 06</div>
-      <div class="card-title">When I Freeze and Feel Nothing</div>
-      <p class="card-body">Not sadness. Not anxiety. Just... nothing. A heavy absence where feeling used to be. This practice doesn't force anything. It gently warms the body back — layer by layer, breath by breath — the way you'd thaw something slowly from the inside out.</p>
-    </div>
-
-    <div class="card reveal">
-      <div class="card-num">Practice 07</div>
-      <div class="card-title">When Anger Rises and You Want to Tell Everyone Off</div>
-      <p class="card-body">The heat is rising. You want to say something sharp and you know you'll regret it. Anger isn't the enemy — it's the alarm. This practice gives it somewhere to go. Loud, physical, real. The calm comes after. It always does.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ─── TRUST / TEAM ─── -->
-<section class="trust" id="about">
-  <div class="trust-inner">
-    <div class="section-tag reveal">Who made this</div>
-    <h2 class="reveal">Built by women<br>who have lived this<br><em>from the inside</em></h2>
-    <p class="body-p reveal">Andrum was built by three women who have lived anxious attachment from the inside — not as researchers, but as the person who couldn't stop refreshing, couldn't calm down, couldn't explain to anyone why it felt like the world was ending. The practices exist because we needed them and couldn't find them.</p>
-
-    <div class="team-section reveal">
-      <div class="team-img-wrap">
-        <img class="team-img" src="assets/images/team.jpg" alt="Ksu, Bec and Masha" />
-        <div class="team-img-overlay"></div>
-      </div>
-      <div class="team-caption">
-        <div class="team-names-block">
-          <div class="team-name-item">
-            <span class="team-name">Ksu</span>
-            <span class="team-role">certified breathwork facilitator</span>
-          </div>
-          <div class="team-name-divider"></div>
-          <div class="team-name-item">
-            <span class="team-name">Bec</span>
-            <span class="team-role">certified breathwork facilitator</span>
-          </div>
-          <div class="team-name-divider"></div>
-          <div class="team-name-item">
-            <span class="team-name">Masha</span>
-            <span class="team-role">co-founder</span>
+        <div class="team-caption">
+          <div class="team-names-block">
+            <div class="team-name-item">
+              <span class="team-name">Ksu</span>
+              <span class="team-role">certified breathwork facilitator</span>
+            </div>
+            <div class="team-name-divider"></div>
+            <div class="team-name-item">
+              <span class="team-name">Bec</span>
+              <span class="team-role">certified breathwork facilitator</span>
+            </div>
+            <div class="team-name-divider"></div>
+            <div class="team-name-item">
+              <span class="team-name">Masha</span>
+              <span class="team-role">co-founder</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ─── FINAL CTA ─── -->
-<section class="final-cta" id="waitlist-cta">
-  <div class="final-sphere-wrap">
-    <div class="final-sphere-ring final-sphere-ring-2"></div>
-    <div class="final-sphere-ring final-sphere-ring-1"></div>
-    <div class="final-sphere"></div>
-  </div>
-  <div class="final-inner">
-    <h2 class="reveal">Your feedback shapes<br><em>what this becomes</em></h2>
-    <p class="final-sub reveal">Try them. Tell us what helped, what didn't, what you needed that wasn't there.</p>
-
-    <div class="waitlist-form-wrap reveal">
-      <div id="waitlist-form-2">
-        <div class="waitlist-input-row">
-          <input class="waitlist-input" type="email" placeholder="Your email address" id="email-input-2" />
-          <button class="waitlist-btn" data-form-submit="secondary">Join waitlist &amp; listen free</button>
-        </div>
-        <label class="form-checkbox">
-          <input type="checkbox" id="consent-2" checked />
-          <span class="form-checkbox-box"></span>
-          <span class="form-checkbox-text">By leaving your email, you agree to our <a href="/privacy" target="_blank">Privacy Policy</a></span>
-        </label>
+  <section class="change-section">
+    <div class="section-heading reveal">
+      <div class="section-tag">What Changes</div>
+      <h2>What changes</h2>
+    </div>
+    <div class="change-grid">
+      <div class="change-item reveal">
+        <span>In the moment</span>
+        <p>The wave has somewhere to go. Your body begins to settle. You find a little more space before reacting.</p>
+      </div>
+      <div class="change-item reveal">
+        <span>After weeks</span>
+        <p>The path back becomes more familiar. You start recognising the trigger earlier.</p>
+      </div>
+      <div class="change-item reveal">
+        <span>Over time</span>
+        <p>The reaction may still come, but it no longer owns the whole room. You know how to return.</p>
       </div>
     </div>
-  </div>
-</section>
+    <p class="closing-note reveal">Not a promise of instant healing. A practice of returning.</p>
+  </section>
 
-<!-- ─── FOOTER ─── -->
+  <section class="brand-section">
+    <div class="brand-inner reveal">
+      <h2>A quiet place for the part of you that feels too much.</h2>
+      <p>Andrum was made for the moments that are hard to explain without feeling ashamed.</p>
+      <p>The checking.<br>The waiting.<br>The sudden drop in your stomach.<br>The need to know you still matter.</p>
+      <p>Nothing here asks you to be less sensitive. Nothing here tells you to become "chill."</p>
+      <p>The practice simply gives your body another message:<br>you are safe enough to breathe right now.</p>
+    </div>
+  </section>
+
+  <section class="purchase-section" id="purchase">
+    <div class="purchase-card reveal">
+      <div class="purchase-copy">
+        <div class="section-tag">Purchase</div>
+        <h2>Start with the SOS Practices</h2>
+        <h3>Andrum SOS Practices</h3>
+        <ul class="purchase-list">
+          <li>7 guided breathwork audios</li>
+          <li>5-10 minutes each</li>
+          <li>State-based guide</li>
+          <li>Instant access after purchase</li>
+          <li>Use anytime, from your phone</li>
+        </ul>
+      </div>
+      <div class="price-box">
+        <span class="launch-line">Launch price available for the first week.</span>
+        <div class="price">$XX</div>
+        <a href="#" class="button-primary">Buy Now</a>
+        <p class="microcopy">Secure checkout · Instant access by email</p>
+        <p class="purchase-note">Once you purchase, you'll receive immediate access to the full SOS collection and a simple guide to choosing the right practice for your state.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="section-heading reveal">
+      <div class="section-tag">FAQ</div>
+      <h2>Questions before you begin</h2>
+    </div>
+    <div class="faq-list">
+      <details class="reveal" open>
+        <summary>Is this therapy?</summary>
+        <p>No. Andrum is not a substitute for therapy or mental health care. It is a body-based support tool for emotional regulation in the moment.</p>
+      </details>
+      <details class="reveal">
+        <summary>How long are the practices?</summary>
+        <p>Each practice is 5-10 minutes.</p>
+      </details>
+      <details class="reveal">
+        <summary>Do I need experience with breathwork?</summary>
+        <p>No. The practices are guided step by step.</p>
+      </details>
+      <details class="reveal">
+        <summary>When should I use them?</summary>
+        <p>Use them when you feel activated, spiralling, frozen, jealous, ashamed, angry, or pulled to reach out from panic.</p>
+      </details>
+      <details class="reveal">
+        <summary>Can I use them more than once?</summary>
+        <p>Yes. They are made to return to whenever you need support.</p>
+      </details>
+      <details class="reveal">
+        <summary>What happens after I buy?</summary>
+        <p>You receive instant access to the full SOS Practices collection and the guide.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="final-sphere-wrap" aria-hidden="true">
+      <div class="final-sphere-ring final-sphere-ring-2"></div>
+      <div class="final-sphere-ring final-sphere-ring-1"></div>
+      <div class="final-sphere"></div>
+    </div>
+    <div class="final-inner reveal">
+      <h2>You do not have to wait until you feel calm to begin.</h2>
+      <p>Start where you are.<br>Press play.<br>Breathe here.</p>
+      <a href="#purchase" class="button-primary">Buy the SOS Practices</a>
+    </div>
+  </section>
+</main>
+
 <footer>
   <a href="/" aria-label="Andrum">
     <img src="assets/ANDRUM.svg" alt="Andrum" class="footer-logo">
@@ -212,7 +340,7 @@
   <div class="footer-links">
     <a href="/privacy">Privacy</a>
     <a href="/terms">Terms</a>
-    <a href="/cdn-cgi/l/email-protection#88e9e6ecfafde5a6fbf8e9ebedc8efe5e9e1e4a6ebe7e5">Contact</a>
+    <a href="mailto:andrum.space@gmail.com">Contact</a>
   </div>
 </footer>
 
