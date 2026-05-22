@@ -1098,7 +1098,7 @@ async function handleSubmit() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: input.value })
     });
-    window.location.href = '/practices';
+    window.location.href = 'practices/';
   } catch {
     btn.textContent = 'Try again';
     btn.disabled = false;
@@ -1128,7 +1128,7 @@ async function handleSubmit2() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: input.value })
     });
-    window.location.href = '/practices';
+    window.location.href = 'practices/';
   } catch {
     btn.textContent = 'Try again';
     btn.disabled = false;
