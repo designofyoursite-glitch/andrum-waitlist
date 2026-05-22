@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrum — Terms of Use</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #F5F0EB;
+  --bg2:       #EDE8E2;
+  --bg3:       #E8E4DF;
+  --mist:      #B8C5CC;
+  --slate:     #6B8891;
+  --slate-d:   #4A6570;
+  --text:      #2C2C2A;
+  --text-mid:  #6B6560;
+  --text-soft: #9B9590;
+  --border:    rgba(107,136,145,0.15);
+  --border2:   rgba(107,136,145,0.25);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  line-height: 1.75;
+}
+
+.blob-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.25;
+  animation: blobDrift 18s ease-in-out infinite;
+}
+.blob-1 { width:520px; height:520px; background:#B8C5CC; top:-100px; left:-120px; animation-delay:0s; }
+.blob-2 { width:400px; height:400px; background:#C4B5A0; bottom:-80px; right:-80px; animation-delay:-7s; }
+@keyframes blobDrift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(30px,-20px) scale(1.04); }
+  66% { transform: translate(-20px,30px) scale(0.97); }
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 28px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  background: linear-gradient(to bottom, rgba(245,240,235,0.92) 60%, transparent);
+  backdrop-filter: blur(8px);
+}
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav-link {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.nav-link:hover { color: var(--slate-d); }
+.nav-cta {
+  background: transparent;
+  color: var(--slate-d);
+  border: 1px solid var(--border2);
+  padding: 10px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+.nav-cta:hover { background: var(--slate); color: white; border-color: var(--slate); }
+
+@media(max-width:768px){
+  nav { padding: 20px 24px; }
+  .nav-links { gap: 16px; }
+  .nav-link { font-size: 11px; }
+  .nav-cta { display: none; }
+}
+
+.page-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 140px 24px 100px;
+}
+
+.page-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.page-eyebrow::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--mist);
+}
+.page-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.page-date {
+  font-size: 12px;
+  color: var(--text-soft);
+  letter-spacing: 0.08em;
+  margin-bottom: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy-section { margin-bottom: 52px; }
+.policy-num {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 12px;
+}
+.policy-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.policy-body {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.85;
+}
+.policy-body + .policy-body { margin-top: 14px; }
+.policy-list {
+  list-style: none;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.policy-list li {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  padding-left: 20px;
+  position: relative;
+}
+.policy-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 5px;
+  height: 1px;
+  background: var(--mist);
+}
+.policy-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 52px;
+}
+a.policy-link {
+  color: var(--slate-d);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border2);
+  transition: border-color 0.2s;
+}
+a.policy-link:hover { border-color: var(--slate); }
+
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 40px 56px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+footer a { color: var(--text-soft); text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--slate); }
+@media(max-width:768px){
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+}
+
+.reveal { opacity:0; transform:translateY(20px); transition:opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in { opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<div class="blob-layer">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<nav>
+  <a href="/" class="logo">Andrum</a>
+  <div class="nav-links">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/" class="nav-cta">Join the waitlist</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-eyebrow reveal">Legal</div>
+  <h1 class="page-title reveal">Terms of Use</h1>
+  <div class="page-date reveal">Last updated: March 16, 2025</div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">01</div>
+    <div class="policy-heading">Acceptance of Terms</div>
+    <p class="policy-body">By accessing andrum.space or joining the Andrum waitlist, you agree to be bound by these Terms of Use. If you do not agree, please do not use the website or submit your email address.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">02</div>
+    <div class="policy-heading">About the Service</div>
+    <p class="policy-body">Andrum is a pre-launch product. The current website is a waitlist page that allows users to register their interest in the upcoming Andrum app — a set of guided breathwork practices designed for specific emotional moments in relationships.</p>
+    <p class="policy-body">No paid service, subscription, or product is being offered at this time. Joining the waitlist does not create any contractual obligation on either side, and does not guarantee access to any future product.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">03</div>
+    <div class="policy-heading">Eligibility</div>
+    <p class="policy-body">By submitting your email address, you confirm that:</p>
+    <ul class="policy-list">
+      <li>You are at least 13 years of age.</li>
+      <li>You are not barred from using services of this kind under applicable law.</li>
+      <li>The information you provide is accurate.</li>
+    </ul>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">04</div>
+    <div class="policy-heading">Waitlist</div>
+    <p class="policy-body">By joining the waitlist, you agree to receive communications from Andrum related to product launch, early access, and updates. You may unsubscribe at any time by contacting us or using the unsubscribe link in any email we send.</p>
+    <p class="policy-body">We reserve the right to remove anyone from the waitlist at our discretion, and to cancel or delay the product launch without notice or liability.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">05</div>
+    <div class="policy-heading">Intellectual Property</div>
+    <p class="policy-body">All content on andrum.space — including text, audio practices, brand name, logo, and design — is the property of Andrum and is protected by applicable intellectual property laws.</p>
+    <p class="policy-body">You may not copy, reproduce, distribute, or create derivative works from any content on this website without our prior written permission.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">06</div>
+    <div class="policy-heading">Disclaimer of Warranties</div>
+    <p class="policy-body">The website and its content are provided "as is" and "as available" without warranties of any kind, either express or implied. Andrum does not warrant that the website will be uninterrupted, error-free, or free of harmful components.</p>
+    <p class="policy-body">The breathwork practices described on this website are for general wellness purposes only and do not constitute medical advice. If you have a medical or mental health condition, consult a qualified professional before using any breathwork techniques.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">07</div>
+    <div class="policy-heading">Limitation of Liability</div>
+    <p class="policy-body">To the fullest extent permitted by law, Andrum and its founders shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, the website or any content on it.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">08</div>
+    <div class="policy-heading">Third-Party Links</div>
+    <p class="policy-body">Our website may contain links to third-party websites (such as Instagram). We are not responsible for the content or privacy practices of those sites. Visiting them is at your own risk.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">09</div>
+    <div class="policy-heading">Changes to These Terms</div>
+    <p class="policy-body">We reserve the right to update these Terms of Use at any time. Changes will be posted on this page with an updated date. Continued use of the website after changes constitutes your acceptance of the revised terms.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">10</div>
+    <div class="policy-heading">Governing Law</div>
+    <p class="policy-body">These Terms of Use are governed by and construed in accordance with the laws of the jurisdiction in which Andrum operates, without regard to conflict of law principles.</p>
+  </div>
+
+  <div class="policy-divider"></div>
+
+  <div class="policy-section reveal">
+    <div class="policy-num">11</div>
+    <div class="policy-heading">Contact</div>
+    <p class="policy-body">For any questions about these Terms of Use, please contact us:</p>
+    <p class="policy-body" style="margin-top:14px;">
+      Website: <a href="https://andrum.space" class="policy-link">andrum.space</a><br>
+      Email: <a href="mailto:andrum.space@gmail.com" class="policy-link">andrum.space@gmail.com</a>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <a href="/" aria-label="Andrum">
+    <img src="../assets/ANDRUM.svg" alt="Andrum" style="display:block;height:10px;width:auto;">
+  </a>
+  <div style="display:flex;gap:32px;">
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+    <a href="mailto:andrum.space@gmail.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
